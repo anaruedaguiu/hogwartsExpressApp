@@ -29,6 +29,7 @@ class TrainRouteController extends Controller
     public function create()
     {
         //
+        return view ('createTrainRoute');
     }
 
     /**
@@ -40,6 +41,11 @@ class TrainRouteController extends Controller
     public function store(Request $request)
     {
         //
+        $trainRoute = request()->except('_token');
+
+        TrainRoute::create($trainRoute);
+
+        return redirect()->route('home');
     }
 
     /**
@@ -51,6 +57,9 @@ class TrainRouteController extends Controller
     public function show($id)
     {
         //
+        $trainRoute = TrainRoute::find($id);
+
+        return view('showTrainRoute', compact('trainRoute'));
     }
 
     /**
@@ -62,6 +71,9 @@ class TrainRouteController extends Controller
     public function edit($id)
     {
         //
+        $trainRoute = TrainRoute::find($id);
+
+        return view('editTrainRoute', compact('trainRoute'));
     }
 
     /**
@@ -74,6 +86,11 @@ class TrainRouteController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $trainRoute = request()->except('_token', '_method');
+        
+        TrainRoute::where('id', '=', $id)->update($trainRoute);
+
+        return redirect()->route('home');
     }
 
     /**
@@ -85,5 +102,8 @@ class TrainRouteController extends Controller
     public function destroy($id)
     {
         //
+        TrainRoute::destroy($id);
+
+        return redirect()->route('home');
     }
 }
