@@ -6,10 +6,9 @@
         <img class="img-thumbnail" src="{{ $trainRoute->img }}" alt="">
         <div>
             <h2>{{ $trainRoute->name }}</h2>
-            <h2>{{ $trainRoute->userName }}</h2>
             <h2>{{ $trainRoute->origin }}</h2>
             <h2>{{ $trainRoute->destination }}</h2>
-            <h2>{{ $trainRoute->datetime }}</h2>
+            <h2>{{ $trainRoute->date }}</h2>
             <h2>{{ $trainRoute->departureTime }}</h2>
             <h2>{{ $trainRoute->arrivalTime }}</h2>
             <h2>{{ $trainRoute->routeLenght }}</h2>

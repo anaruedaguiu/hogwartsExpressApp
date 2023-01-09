@@ -16,11 +16,6 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="inputGroup-sizing-default">User Name</span>
-                                <input type="text" name="userName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$trainRoute->userName}}">
-                            </div>
-
-                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Origin</span>
                                 <input type="text" name="origin" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$trainRoute->origin}}">
                             </div>
@@ -31,8 +26,8 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Date Time</span>
-                                <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$trainRoute->datetime}}">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                                <input type="text" name="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{$trainRoute->date}}">
                             </div>
 
                             <div class="input-group mb-3">

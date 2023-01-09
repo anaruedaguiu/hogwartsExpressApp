@@ -11,10 +11,9 @@ class TrainRoute extends Model
 
     protected $fillable = [
         'name',
-        'userName',
         'origin',
         'destination',
-        'datetime',
+        'date',
         'departureTime',
         'arrivalTime',
         'routeLenght',

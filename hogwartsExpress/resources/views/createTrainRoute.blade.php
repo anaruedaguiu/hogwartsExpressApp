@@ -15,11 +15,6 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="inputGroup-sizing-default">User Name</span>
-                                <input type="text" name="userName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="userName">
-                            </div>
-
-                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-default">Origin</span>
                                 <input type="text" name="origin" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="origin">
                             </div>
@@ -30,8 +25,8 @@
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Date Time</span>
-                                <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="datetime">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Date</span>
+                                <input type="text" name="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="date">
                             </div>
 
                             <div class="input-group mb-3">
