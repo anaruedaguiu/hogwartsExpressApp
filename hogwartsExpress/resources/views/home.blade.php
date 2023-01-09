@@ -3,9 +3,9 @@
 @section('content')
 
     <div class="d-flex justify-content-center">
-        <button class="btn btn-primary">
-            <a href="{{ route('createTrainRoute') }}">
-                <div class="text-warning">NEW TRAIN ROUTE</div>
+        <button class=" createButton">
+            <a href="{{ route('createTrainRoute') }}" style="text-decoration:none">
+                <div class="textCreateButton"> NEW TRAIN ROUTE </div>
             </a>
         </button>
     </div>
@@ -25,16 +25,16 @@
                     <h5 class="card-title title">⏱️ {{ $trainRoute->routeLenght }}</h5>
                     <h5 class="card-title title">💺 {{ $trainRoute->availableSeats }} Asientos</h5>
                     <!-- <p class="card-text text-white">{{ $trainRoute->features }}</p> -->
-                    <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post">
+                    <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post" class="formStyle">
                     @method('delete')
                     @csrf 
                         <button type="submit"
-                            class="bt-adm m-1 d-flex justify-content-center align-items-center"
+                            class="bt-adm removeButton m-1 d-flex justify-content-center align-items-center mx-auto"
                             onclick="return confirm('Are you sure you want to delete this Train Route? {{ $trainRoute->name }} - ID {{ $trainRoute->id }}')">Remove 
                         </button>
-                    <a class="bt-adm m-1 d-flex justify-content-center align-items-center" 
+                    <a class="bt-adm anchorForm m-1 d-flex justify-content-center align-items-center" style="text-decoration:none"
                         href="{{ route('editTrainRoute', ['id' => $trainRoute->id]) }}">Edit</a>
-                    <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('showTrainRoute', $trainRoute->id) }}">Show</a>
+                    <a class="bt-adm anchorForm m-1 d-flex justify-content-center align-items-center" style="text-decoration:none" href="{{ route('showTrainRoute', $trainRoute->id) }}">Show</a>
                     </form>
                 </div>
             </div>

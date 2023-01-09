@@ -20,6 +20,9 @@
 
 .card-body {
     margin-bottom: 2px;
+    margin-bottom: 3px;
+    border-end-start-radius:  5px;
+    border-end-end-radius: 5px;
 }
 
 /* .text {
@@ -40,3 +43,42 @@
 /* .btn {
     background-color: #D1C5AC !important;
 } */
+
+.removeButton {
+    background-color: #D1C5AC !important;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border-color: transparent !important;
+    width: 5rem;
+}
+
+.anchorForm {
+    background-color: #D1C5AC !important;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border-color: transparent !important;
+    width: 5rem;
+    padding: 2px;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    align-self: center !important;
+}
+
+.createButton {
+    background-color: #981A1A;
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: transparent !important;
+    padding: 5px;
+}
+.textCreateButton {
+    color: #D1C5AC;
+}
