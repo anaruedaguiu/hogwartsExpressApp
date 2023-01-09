@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div>
+    <div class="d-flex justify-content-center">
         <button class="btn btn-primary">
             <a href="{{ route('createTrainRoute') }}">
                 <div class="text-warning">NEW TRAIN ROUTE</div>
@@ -17,15 +17,13 @@
                     <img src="{{ $trainRoute->img }}" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body bg-dark">
-                    <h5 class="card-title text-primary">{{ $trainRoute->name }}</h5>
-                    <!-- <h5 class="card-title text-primary">{{ $trainRoute->userName }}</h5> -->
-                    <h5 class="card-title text-primary">{{ $trainRoute->origin }}</h5>
-                    <h5 class="card-title text-primary">{{ $trainRoute->destination }}</h5>
-                    <h5 class="card-title text-danger">{{ $trainRoute->date }}</h5>
-                    <h5 class="card-title text-danger">{{ $trainRoute->departureTime }}</h5>
-                    <h5 class="card-title text-danger">{{ $trainRoute->arrivalTime }}</h5>
-                    <h5 class="card-title text-danger">{{ $trainRoute->routeLenght }}</h5>
-                    <h5 class="card-title text-warning">{{ $trainRoute->availableSeats }} Asientos</h5>
+                    <h2 class="card-title nameTitle">{{ $trainRoute->name }}</h2>
+                    <h5 class="card-title title">📍 {{ $trainRoute->origin }} </h5>
+                    <h5 class="card-title title">📍 {{ $trainRoute->destination }}</h5>
+                    <h5 class="card-title title">📅 {{ $trainRoute->date }}</h5>
+                    <h5 class="card-title title">🕑 {{ $trainRoute->departureTime }} - {{ $trainRoute->arrivalTime }}</h5>
+                    <h5 class="card-title title">⏱️ {{ $trainRoute->routeLenght }}</h5>
+                    <h5 class="card-title title">💺 {{ $trainRoute->availableSeats }} Asientos</h5>
                     <!-- <p class="card-text text-white">{{ $trainRoute->features }}</p> -->
                     <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post">
                     @method('delete')
@@ -36,7 +34,7 @@
                         </button>
                     <a class="bt-adm m-1 d-flex justify-content-center align-items-center" 
                         href="{{ route('editTrainRoute', ['id' => $trainRoute->id]) }}">Edit</a>
-                    <a href="{{ route('showTrainRoute', $trainRoute->id) }}">Show</a>
+                    <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('showTrainRoute', $trainRoute->id) }}">Show</a>
                     </form>
                 </div>
             </div>

@@ -1,0 +1,42 @@
+.nameTitle {
+    font-family: Bluu Next;
+    color: #D1C5AC !important;
+    /* font-size: 20px; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px !important;
+    padding: 5px;
+}
+
+.title {
+    font-family: Montserrat;
+    color: #D1C5AC !important;
+    text-align: center;
+}
+
+.card-img-top {
+    margin-top: 2px;
+}
+
+.card-body {
+    margin-bottom: 2px;
+}
+
+/* .text {
+    color: #D1C5AC !important;
+    font-weight: bold;
+} */
+
+/* .py-4 {
+    background-color: #110f1c;
+} */
+
+.card {
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* .btn {
+    background-color: #D1C5AC !important;
+} */
