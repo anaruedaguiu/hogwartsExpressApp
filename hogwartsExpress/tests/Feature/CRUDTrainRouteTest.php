@@ -54,10 +54,9 @@ class CRUDTrainRouteTest extends TestCase
         $response = $this->post(route('storeTrainRoute'),
         [
             'name'=> 'name',
-            'userName'=> 'userName',
             'origin'=> 'origin',
             'destination'=> 'destination',
-            'datetime'=> '2022-12-31',
+            'date'=> '2022-12-31',
             'departureTime'=> '10:00:00',
             'arrivalTime'=> '13:00:00',
             'routeLenght'=> 'routeLenght',

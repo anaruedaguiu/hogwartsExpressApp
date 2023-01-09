@@ -21,7 +21,7 @@
                     <!-- <h5 class="card-title text-primary">{{ $trainRoute->userName }}</h5> -->
                     <h5 class="card-title text-primary">{{ $trainRoute->origin }}</h5>
                     <h5 class="card-title text-primary">{{ $trainRoute->destination }}</h5>
-                    <h5 class="card-title text-danger">{{ $trainRoute->datetime }}</h5>
+                    <h5 class="card-title text-danger">{{ $trainRoute->date }}</h5>
                     <h5 class="card-title text-danger">{{ $trainRoute->departureTime }}</h5>
                     <h5 class="card-title text-danger">{{ $trainRoute->arrivalTime }}</h5>
                     <h5 class="card-title text-danger">{{ $trainRoute->routeLenght }}</h5>

@@ -24,10 +24,9 @@ class DatabaseSeeder extends Seeder
     
         TrainRoute::factory()->create([
             'name'=> 'Málaga María Zambrano Station - Hogsmeade Station',
-            'userName'=> 'Ana',
             'origin'=> 'Málaga',
             'destination'=> 'Hogsmeade',
-            'datetime'=> '2022-12-31',
+            'date'=> '2022-12-31',
             'departureTime'=> '10:00:00',
             'arrivalTime'=> '13:00:00',
             'routeLenght'=> '180',

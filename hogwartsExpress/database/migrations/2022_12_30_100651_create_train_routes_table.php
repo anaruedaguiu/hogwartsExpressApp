@@ -17,10 +17,9 @@ return new class extends Migration
             $table->id();
 
             $table->string('name',150);
-            $table->string('userName',150);
             $table->string('origin',50);
             $table->string('destination',50);
-            $table->datetime('datetime');
+            $table->date('date');
             $table->time('departureTime');
             $table->time('arrivalTime');
             $table->string('routeLenght',);

@@ -19,10 +19,9 @@ class TrainRouteFactory extends Factory
         return [
             //
             'name'=> $this->faker->company(),
-            'userName'=> $this->faker->firstNameFemale(),
             'origin'=> $this->faker->city(),
             'destination'=> $this->faker->city(),
-            'datetime'=> $this->faker->dateTime(),
+            'date'=> $this->faker->date(),
             'departureTime'=> $this->faker->time(),
             'arrivalTime'=> $this->faker->time(),
             'routeLenght'=> $this->faker->biasedNumberBetween($min = 300, $max= 500, $function = 'sqrt'),
