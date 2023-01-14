@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-    
+
         TrainRoute::factory()->create([
             'name'=> 'Málaga María Zambrano Station - Hogsmeade Station',
             'origin'=> 'Málaga',

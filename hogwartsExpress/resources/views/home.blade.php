@@ -11,25 +11,33 @@
         @endif
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="a"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="a"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
             @foreach ($trainRoutes as $id => $trainRoute)
                 <div class="carousel-item {{$trainRoute['id']==1?'active':''}}">
                     <a href="{{ route('showTrainRoute', $trainRoute->id) }}">
                         <img src="{{ $trainRoute->img }}" class="d-block imageSize w-100" alt="{{ $trainRoute->name }}">
-                        <h3>{{$trainRoute['name']}}</h3>
+
                     </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>{{$trainRoute['name']}}</h3>
+                      </div>
                 </div>
             @endforeach
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -63,12 +71,12 @@
                                 </div>
 
                                 @method('delete')
-                                @csrf 
+                                @csrf
                                     <div class="removeButton">
                                         @if(Auth::check() && Auth::user()->isAdmin)
                                             <button type="submit"
-                                                class="bt-adm m-1 d-flex justify-content-center align-items-center mx-auto" 
-                                                onclick="return confirm('Are you sure you want to delete this Train Route? {{ $trainRoute->name }} - ID {{ $trainRoute->id }}')">Remove 
+                                                class="bt-adm m-1 d-flex justify-content-center align-items-center mx-auto"
+                                                onclick="return confirm('Are you sure you want to delete this Train Route? {{ $trainRoute->name }} - ID {{ $trainRoute->id }}')">Remove
                                             </button>
                                         @endif
                                     </div>

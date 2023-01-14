@@ -24,15 +24,7 @@
 
 /*____DISEÑO SLIDER____*/
 
-.carouselDesign {
-    /* object-fit: scale-down;
-    height: 50vh;
-    width: 50vh; */
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    overflow: auto !important;
-}
+
 
 .imageSize {
     object-fit: cover !important;
@@ -134,7 +126,7 @@
     /* margin-right: 0 !important;
     margin-left: 0 !important; */
     background-color: #D1C5AC !important;
-    /* padding: 0 !important; */ 
+    /* padding: 0 !important; */
     /* margin: 0 !important; */
     /* box-sizing: border-box !important;
     background-size: cover !important; */
