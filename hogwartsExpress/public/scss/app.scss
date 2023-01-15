@@ -239,8 +239,116 @@ $border-color: #444;
 }
 
 
+//buttons
+
+.button {
+    position: relative;
+    display: block;
+    background: transparent;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 40px auto;
+       font-family: bluu next;
+    font-size:25px;
+    box-sizing: border-box;
+  }
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: '';
+    width: 300px;
+    left: 0px;
+    height: 34px;
+    z-index: -1;
+  }
+
+  .button:before {
+    transform: perspective(15px) rotateX(3deg);
+  }
+  .button:after {
+    top: 40px;
+    transform: perspective(15px) rotateX(-3deg);
+  }
+
+  /* Button Border Style */
+
+  .button.border:before,
+  .button.border:after {
+    border: 5px double #D2C5AD;
+  }
+  .button.border:before {
+    border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
+  }
+  .button.border:after {
+    border-top: none; /* to prevent the border-line showing up in the middle of the shape */
+  }
+
+  /* Button hover styles */
 
 
+.button {
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 40px auto;
+     font-family: bluu next;
+  font-size:25px;
+  box-sizing: border-box;
+}
+.button:before,
+.button:after {
+  position: absolute;
+  content: '';
+  width: 300px;
+  left: 0px;
+  height: 34px;
+  z-index: -1;
+}
+
+.button:before {
+  transform: perspective(15px) rotateX(3deg);
+}
+.button:after {
+  top: 40px;
+  transform: perspective(15px) rotateX(-3deg);
+}
+
+/* Button Border Style */
+
+.button.border:before,
+.button.border:after {
+  border: 5px double #D2C5AD;
+}
+.button.border:before {
+  border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+.button.border:after {
+  border-top: none; /* to prevent the border-line showing up in the middle of the shape */
+}
+
+/* Button hover styles */
+
+.button.border:hover:before,
+.button.border:hover:after {
+  background:  #D2C5AD;
+}
+.button.border:hover {
+  color: #fff;
+}
 
 
 
