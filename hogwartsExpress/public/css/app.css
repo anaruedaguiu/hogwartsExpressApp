@@ -136,7 +136,7 @@
     display: flex;
     justify-content: start !important;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #D1C5AC;
+    color: #ffffff;
     border-color: transparent !important;
     /* width: 5rem;
     padding: 2px; */
@@ -191,3 +191,23 @@
 
 
 
+/* General Button Style */
+
+
+a.diamont {
+    border:0!important;
+    color:white;
+    font-size: 12px;
+    background:rgb(0, 142, 90);
+    margin:10px;
+    text-transform:uppercase;
+    padding:7px;
+}
+button[type=submit]{
+    border:0!important;
+    color:white;
+    font-size: 12px;
+    background:rgb(0, 0, 255);
+    margin:10px;
+    text-transform:uppercase;
+}

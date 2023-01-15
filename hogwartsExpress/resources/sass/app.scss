@@ -21,8 +21,8 @@ a{
 }
 
 .main-content {
-	margin: 4em auto 0;
-	width: 22rem;
+	margin:auto;
+	width: 20rem;
 	text-transform: uppercase;
 }
 
@@ -134,16 +134,21 @@ a{
     grid-column-start: span 2;
 }
 
+.formButtons{
+   display:grid;
+   grid-column-start: span 2;
+}
+
 .allButtonsBox {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr 1fr;
     grid-row: 1;
     margin:auto;
 }
 
 .fineprint {
 	grid-column-start: span 5;
-	font-size: 14px;
+	font-size: 10px;
 	font-family: 'Inconsolata';
 	line-height: 1;
 	margin-top: 10px;
@@ -253,5 +258,8 @@ a{
 			margin: 9px 0 0 10px;
 			text-align: center;
 	}
-}
+
+
+    }
+
 /* end markup card scss */
