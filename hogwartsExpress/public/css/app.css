@@ -1,0 +1,37 @@
+.piePagina{
+    color: #d1c5ac;
+    width: 100%;
+}
+
+.piePagina .group1{
+    /* Border:2px solid red; */
+    font-family: 'sofia pro';
+    width: 100%;
+    line-height: 50%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    /* padding: 45px 0px; */
+}
+.piePagina .group1 h2{
+    font-family: 'bluu next';
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.piePagina .group2{
+    font-family: 'bluu next';
+    padding: 15px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .piePagina .group1{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        padding: 10px 0px;
+    }
+}
