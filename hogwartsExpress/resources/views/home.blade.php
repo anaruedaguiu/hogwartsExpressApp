@@ -3,7 +3,7 @@
 @section('content')
     <div class="d-flex justify-content-center">
         @if(Auth::check() && Auth::user()->isAdmin)
-            <button class=" createButton">
+            <button class="createButton">
                 <a href="{{ route('createTrainRoute') }}" style="text-decoration:none">
                     <div class="textCreateButton"> NEW TRAIN ROUTE </div>
                 </a>
@@ -11,7 +11,7 @@
         @endif
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+<!--     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="a"></button>
         </div>
@@ -33,7 +33,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
     <div class="cardPosition">
         @foreach ($trainRoutes as $trainRoute)
@@ -47,17 +47,17 @@
                     <h5 class="card-title infoCard"> <strong>From:</strong> {{ $trainRoute->origin }} ({{ $trainRoute->departureTime }}) <strong>To:</strong> {{ $trainRoute->destination }} ({{ $trainRoute->arrivalTime }})</h5>
                     <h5 class="card-title title infoCard">{{ $trainRoute->availableSeats }} Places</h5>
                     <!-- <p class="card-text text-white">{{ $trainRoute->features }}</p> -->
-                    <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post" class="formStyle">
+                    <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post">
                         <div class="allButtons">
                             <div class="selectButton">
-                                @if(Auth::check() && Auth::user()->isAdmin)
-                                    <a class="bt-adm m-1 d-flex justify-content-center align-items-center" style="text-decoration:none" href="{{ route('showTrainRoute', $trainRoute->id) }}">Select</a>
+                                @if(Auth::check())
+                                    <a class="bt-adm selectText m-1 d-flex justify-content-center align-items-center" style="text-decoration:none" href="{{ route('showTrainRoute', $trainRoute->id) }}">Select</a>
                                 @endif
                             </div>
-                            <div class="editAndDeleteButton">
+                            
                                 <div class="editButton">
                                     @if(Auth::check() && Auth::user()->isAdmin)
-                                        <a class="bt-adm m-1 d-flex justify-content-center align-items-center" style="text-decoration:none"
+                                        <a class="bt-adm editText m-1 d-flex justify-content-center align-items-center" style="text-decoration:none"
                                             href="{{ route('editTrainRoute', ['id' => $trainRoute->id]) }}">Edit</a>
                                     @endif
                                 </div>
@@ -67,14 +67,18 @@
                                     <div class="removeButton">
                                         @if(Auth::check() && Auth::user()->isAdmin)
                                             <button type="submit"
-                                                class="bt-adm m-1 d-flex justify-content-center align-items-center mx-auto" 
-                                                onclick="return confirm('Are you sure you want to delete this Train Route? {{ $trainRoute->name }} - ID {{ $trainRoute->id }}')">Remove 
+                                                class="bt-adm removeText m-1 d-flex justify-content-center align-items-center mx-auto" 
+                                                onclick="return confirm('Are you sure you want to delete this Train Route? {{ $trainRoute->name }} - ID {{ $trainRoute->id }}')">Delete 
                                             </button>
                                         @endif
                                     </div>
-                            </div>
+                            
                         </div>
                     </form>
+
+                    <div>
+                        <button class="text-warning"><a href="{{ route('inscribe', '$trainRoute->id') }}">Inscribirse</a></button>
+                    </div>
                 </div>
             </div>
         @endforeach
