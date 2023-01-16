@@ -80,7 +80,7 @@
         </main>
     </div>
         
-        <footer class="piePagina">
+        <footer class="footerTrainRoute">
             <div class="group1">
                 
                 <div class="box1">
