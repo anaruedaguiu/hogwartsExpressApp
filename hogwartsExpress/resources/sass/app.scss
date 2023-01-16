@@ -41,30 +41,27 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 
 $carousel-transition-duration:       .6s;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-
-
-
 .main-content {
-	margin:auto;
-	width: 20rem;
-	text-transform: uppercase;
-    margin-top:20px;
-}
+    margin: auto;
+    width: 21rem !important;
+    text-transform: uppercase;
 
-.ticket {
-	display: grid;
-	grid-template-columns: auto 0rem;
-	background: $yellow-light;
-	border: 1px solid #000000;
-	cursor: default;
-	&__main {
-		display: grid;
-		grid-template-columns: repeat(6, 1fr) 110px;
-		grid-template-rows: repeat(4, min-content) auto;
-		padding: 10px;
-	}
-}
+  }
 
+  .ticket {
+    display: grid;
+    grid-template-columns: auto 120px;
+    background: #f3f1c9;
+    border: 2px solid #222;
+    cursor: default;
+  }
+  .ticket__main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) 120px;
+    grid-template-rows: repeat(4, -webkit-min-content) auto;
+    grid-template-rows: repeat(4, min-content) auto;
+    padding: 10px;
+  }
 
 .header {
 	grid-area: title;
