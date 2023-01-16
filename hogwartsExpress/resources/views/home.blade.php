@@ -69,8 +69,8 @@
         <div class="info__detail">{{ $trainRoute->date }}</div>
     </div>
     <div class="info arrival">
-        <div class="info__item">Available Seats</div>
-        <div class="info__detail">{{ $trainRoute->routeLenght }} min.</div>
+        <div class="info__item">Duration</div>
+        <div class="info__detail">{{ $trainRoute->routeLenght }} minutes</div>
     </div>
     <div class="seat">
     </div>
@@ -132,7 +132,6 @@
 </div>
 
 @endforeach
-
 
 
     </div>
