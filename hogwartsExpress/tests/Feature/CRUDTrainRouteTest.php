@@ -128,3 +128,4 @@ class CRUDTrainRouteTest extends TestCase
                 ->assertViewIs('showTrainRoute');
     }
 }
+
