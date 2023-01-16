@@ -118,4 +118,14 @@ class TrainRouteController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function unscribe($id){
+
+        $trainRoute = TrainRoute::find($id);
+        $user = User::find(Auth::id());
+
+        $user->trainRoute()->detach($trainRoute);
+
+        return redirect()->route('home');
+    }
 }

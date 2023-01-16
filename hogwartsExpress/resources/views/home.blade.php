@@ -77,7 +77,8 @@
                     </form>
 
                     <div>
-                        <button class="text-warning"><a href="{{ route('inscribe', '$trainRoute->id') }}">Inscribirse</a></button>
+                        <button class="text-warning"><a href="{{route('inscribe', $trainRoute->id)}}">Inscribirse</a></button>
+                        <button class="text-warning"><a href="{{route('unscribe', $trainRoute->id)}}">Desinscribirse</a></button>
                     </div>
                 </div>
             </div>

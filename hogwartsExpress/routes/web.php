@@ -37,4 +37,4 @@ Route::get('/show/{id}', [TrainRouteController::class, 'show'])->name('showTrain
 
 //Inscribirse - desinscribirse
 Route::get('/inscribe/{id}', [TrainRouteController::class, 'inscribe'])->name('inscribe')->middleware('auth');
-
+Route::get('/unscribe/{id}', [TrainRouteController::class, 'unscribe'])->name('unscribe')->middleware('auth');
