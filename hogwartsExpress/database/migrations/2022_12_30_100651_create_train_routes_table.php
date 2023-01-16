@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date('date');
             $table->time('departureTime');
             $table->time('arrivalTime');
-            $table->string('routeLenght',);
+            $table->string('routeLength',);
             $table->integer('availableSeats');
             $table->string('features');
             $table->string('img');

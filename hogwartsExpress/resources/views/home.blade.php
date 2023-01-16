@@ -43,7 +43,7 @@
                 </a>
                 <div class="card-body">
                     <h2 class="card-title title titleCard">{{ $trainRoute->name }}</h2>
-                    <h5 class="card-title title infoCard">{{ $trainRoute->date }}, {{ $trainRoute->routeLenght }} min.</h5>
+                    <h5 class="card-title title infoCard">{{ $trainRoute->date }}, {{ $trainRoute->routeLength }} min.</h5>
                     <h5 class="card-title infoCard"> <strong>From:</strong> {{ $trainRoute->origin }} ({{ $trainRoute->departureTime }}) <strong>To:</strong> {{ $trainRoute->destination }} ({{ $trainRoute->arrivalTime }})</h5>
                     <h5 class="card-title title infoCard">{{ $trainRoute->availableSeats }} Places</h5>
                     <!-- <p class="card-text text-white">{{ $trainRoute->features }}</p> -->

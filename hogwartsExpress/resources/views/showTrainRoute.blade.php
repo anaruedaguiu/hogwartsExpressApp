@@ -11,7 +11,7 @@
             <h2>{{ $trainRoute->date }}</h2>
             <h2>{{ $trainRoute->departureTime }}</h2>
             <h2>{{ $trainRoute->arrivalTime }}</h2>
-            <h2>{{ $trainRoute->routeLenght }}</h2>
+            <h2>{{ $trainRoute->routeLength }}</h2>
             <h2>{{ $trainRoute->availableSeats }} Available Seats</h2>
             <h2>{{ $trainRoute->features }}</h2>
         </div>
