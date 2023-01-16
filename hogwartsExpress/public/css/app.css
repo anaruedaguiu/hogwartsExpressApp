@@ -1,6 +1,3 @@
-.body {
-    background-color: black;
-}
 .piePagina{
     color: #d1c5ac;
     width: 100%;
@@ -13,10 +10,8 @@
     line-height: 50%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:50px;
-    /* padding: 45px 0px; */
+    display: flex;
+    justify-content: space-between;
 }
 .piePagina .group1 h2{
     font-family: 'bluu next';
