@@ -21,4 +21,8 @@ class TrainRoute extends Model
         'features',
         'img',
     ];
+
+    public function user(){
+        return $this->belongsToMany(User::class);
+    }
 }

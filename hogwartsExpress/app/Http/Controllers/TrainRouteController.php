@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\TrainRoute;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TrainRouteController extends Controller
 {
@@ -103,6 +105,26 @@ class TrainRouteController extends Controller
     {
         //
         TrainRoute::destroy($id);
+
+        return redirect()->route('home');
+    }
+
+    public function inscribe($id){
+
+        $trainRoute = TrainRoute::find($id);
+        $user = User::find(Auth::id());
+
+        $user->trainRoute()->attach($trainRoute);
+
+        return redirect()->route('home');
+    }
+
+    public function unscribe($id){
+
+        $trainRoute = TrainRoute::find($id);
+        $user = User::find(Auth::id());
+
+        $user->trainRoute()->detach($trainRoute);
 
         return redirect()->route('home');
     }

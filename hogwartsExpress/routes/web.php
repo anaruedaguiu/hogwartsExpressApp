@@ -35,3 +35,6 @@ Route::patch('/trainRoute/{id}', [TrainRouteController::class, 'update'])->name(
 //Show
 Route::get('/show/{id}', [TrainRouteController::class, 'show'])->name('showTrainRoute');
 
+//Inscribirse - desinscribirse
+Route::get('/inscribe/{id}', [TrainRouteController::class, 'inscribe'])->name('inscribe')->middleware('auth');
+Route::get('/unscribe/{id}', [TrainRouteController::class, 'unscribe'])->name('unscribe')->middleware('auth');
