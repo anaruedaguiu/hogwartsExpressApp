@@ -57,14 +57,18 @@
                         </a>
                     </div>
                     <div class="info platform">
-                        <span>Depart</span><span>from</span><span>platform</span>
+                        <span>Depart</span>
+                        <span>from</span>
+                        <span>platform</span>
                         <div class="number">
                             <div>9</div>
                             <div>
-                            <span>3</span><span>4</span>
+                                <span>3</span>
+                                <span>4</span>
                             </div>
                         </div>
                     </div>
+
                     <div class="info departure">
                         <div class="info__item">Date</div>
                         <div class="info__detail">{{ $trainRoute->date }}</div>
