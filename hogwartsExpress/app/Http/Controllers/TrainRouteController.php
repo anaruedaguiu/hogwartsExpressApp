@@ -17,7 +17,7 @@ class TrainRouteController extends Controller
     public function index()
     {
         //
-        $trainRoutes = TrainRoute::get();
+        $trainRoutes = TrainRoute::orderBy('date', 'desc')->get();
         //var_dump($trainRoutes);
         return view('home', compact('trainRoutes'));
 
@@ -61,6 +61,7 @@ class TrainRouteController extends Controller
         //
         $trainRoute = TrainRoute::find($id);
 
+
         return view('showTrainRoute', compact('trainRoute'));
     }
 
@@ -89,7 +90,7 @@ class TrainRouteController extends Controller
     {
         //
         $trainRoute = request()->except('_token', '_method');
-        
+
         TrainRoute::where('id', '=', $id)->update($trainRoute);
 
         return redirect()->route('home');
