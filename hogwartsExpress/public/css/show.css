@@ -91,9 +91,10 @@
 
     main.py-4 {
         display: flex;
+        flex-direction:column;
         justify-content: center;
     }
-    
+
     .trainRouteSection {
         max-width: 920px;
     }
