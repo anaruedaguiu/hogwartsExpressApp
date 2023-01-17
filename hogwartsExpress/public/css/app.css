@@ -1,6 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/bluu-next');
 
 
+.pagination{
+    --bs-pagination-bg: transparent!important;
+    --bs-pagination-border-color: #D1C5AC!important;
+    --bs-pagination-color: #D1C5AC!important;
+    --bs-pagination-hover-color: #000!important;
+    --bs-pagination-hover-bg: #D1C5AC!important;
+    --bs-pagination-hover-border-color: #D1C5AC!important;
+    --bs-pagination-focus-color: #D1C5AC!important;
+    --bs-pagination-focus-bg: #D1C5AC!important;
+    --bs-pagination-focus-box-shadow:#D1C5AC!important;
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #D1C5AC!important;
+    --bs-pagination-active-border-color: #D1C5AC!important;
+}
+
+.justify-content-sm-between {
+    justify-content: center !important;
+    flex-direction: column;
+}
+
 .container{
     margin-left:0!important;
     margin-right:0!important;
@@ -34,6 +54,7 @@
 .footerTrainRoute{
     color: #d1c5ac;
     width: 100%;
+    padding: 0 30px 0 30px;
 }
 
 .footerTrainRoute .group1{
