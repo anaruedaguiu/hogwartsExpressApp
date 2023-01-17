@@ -29,7 +29,8 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-dark shadow-sm">
             <div class="container navBox">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="/imagenes/logoAnden934V01.jpeg" alt="Logo Anden 9 3/4" style="width:150px;"/>
+                    {{-- {{ config('app.name', 'Laravel') }} --}}
                 </a>
                 <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon navButton navHello"></span>

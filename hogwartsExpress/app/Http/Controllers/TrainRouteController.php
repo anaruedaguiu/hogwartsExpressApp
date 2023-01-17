@@ -17,7 +17,9 @@ class TrainRouteController extends Controller
     public function index()
     {
         //
-        $trainRoutes = TrainRoute::get()->paginate(5);
+        $trainRoutes = TrainRoute::all();
+        $trainRoutes = TrainRoute::orderBy('date', 'desc')->get();
+
         //var_dump($trainRoutes);
         return view('home', compact('trainRoutes'));
 

@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
             'name'=> 'Málaga María Zambrano Station - Hogwarts School of Witchcraft and Wizardry',
             'origin'=> 'Málaga',
             'destination'=> 'Hogwarts',
-            'date'=> '2023-01-19',
+            'date'=> '2023-02-19',
             'departureTime'=> '11:00:00',
             'arrivalTime'=> '13:00:00',
             'routeLength'=> '120',
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
             'name'=> 'Málaga María Zambrano Station - Hogwarts School of Witchcraft and Wizardry',
             'origin'=> 'Málaga',
             'destination'=> 'Hogwarts',
-            'date'=> '2023-01-19',
+            'date'=> '2023-04-07',
             'departureTime'=> '11:00:00',
             'arrivalTime'=> '13:00:00',
             'routeLength'=> '120',
@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
             'name'=> 'Málaga María Zambrano Station - Hogwarts School of Witchcraft and Wizardry',
             'origin'=> 'Málaga',
             'destination'=> 'Hogwarts',
-            'date'=> '2023-01-19',
+            'date'=> '2023-04-19',
             'departureTime'=> '11:00:00',
             'arrivalTime'=> '13:00:00',
             'routeLength'=> '120',
@@ -91,3 +91,4 @@ class DatabaseSeeder extends Seeder
             ->create();
     }
 }
+

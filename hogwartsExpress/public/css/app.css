@@ -1,5 +1,31 @@
 @import url('https://fonts.cdnfonts.com/css/bluu-next');
 
+
+.container{
+    margin-left:0!important;
+    margin-right:0!important;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 0!important;
+    border-radius: 0!important;
+    transition: 0!important;
+    box-shadow: none!important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0!important;
+    border:0!important;
+}
+
+.navButton {
+    color: #D1C5AC !important;
+    border: 0!important;
+}
+
 .footerTrainRoute{
     color: #d1c5ac;
     width: 100%;
@@ -42,7 +68,7 @@
 
 .navBox {
     color: #D1C5AC !important;
-    border: solid 5px green;
+
 }
 
 .navButton {
