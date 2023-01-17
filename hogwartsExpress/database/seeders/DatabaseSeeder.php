@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
             'routeLength'=> '120',
             'availableSeats'=> '150',
             'features' => 'Disponible el carrito de dulces - ejemplar Periódico "Diario El Profeta"',
-            'img'=> 'https://4.bp.blogspot.com/-dQmFsc4pY58/Vup7zY23d4I/AAAAAAAAQuk/9zTi7LxRn44nP4Qzm0bHKpYeb-zveCu4A/s1600/hogwarts%2B%25281%2529.jpg',
+            'img'=> 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Hogwarts_Express.jpg/800px-Hogwarts_Express.jpg',
         ]);
 
 
@@ -73,7 +73,7 @@ class DatabaseSeeder extends Seeder
             'routeLength'=> '120',
             'availableSeats'=> '150',
             'features' => 'Disponible el carrito de dulces - ejemplar Periódico "Diario El Profeta"',
-            'img'=> 'https://4.bp.blogspot.com/-dQmFsc4pY58/Vup7zY23d4I/AAAAAAAAQuk/9zTi7LxRn44nP4Qzm0bHKpYeb-zveCu4A/s1600/hogwarts%2B%25281%2529.jpg',
+            'img'=> 'https://149455152.v2.pressablecdn.com/wp-content/uploads/2019/09/Hogwarts-Express-Electric-Train-Set-Image-Hornby.jpg',
         ]);
 
         TrainRoute::factory(5)->create();
