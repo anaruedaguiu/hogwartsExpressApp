@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-    
+
         TrainRoute::factory()->create([
             'name'=> 'Málaga María Zambrano Station - Hogsmeade Station',
             'origin'=> 'Málaga',
@@ -48,7 +48,33 @@ class DatabaseSeeder extends Seeder
             'features' => 'Disponible el carrito de dulces - ejemplar Periódico "Diario El Profeta"',
             'img'=> 'https://4.bp.blogspot.com/-dQmFsc4pY58/Vup7zY23d4I/AAAAAAAAQuk/9zTi7LxRn44nP4Qzm0bHKpYeb-zveCu4A/s1600/hogwarts%2B%25281%2529.jpg',
         ]);
-        
+
+
+        TrainRoute::factory()->create([
+            'name'=> 'Málaga María Zambrano Station - Hogwarts School of Witchcraft and Wizardry',
+            'origin'=> 'Málaga',
+            'destination'=> 'Hogwarts',
+            'date'=> '2023-01-19',
+            'departureTime'=> '11:00:00',
+            'arrivalTime'=> '13:00:00',
+            'routeLength'=> '120',
+            'availableSeats'=> '150',
+            'features' => 'Disponible el carrito de dulces - ejemplar Periódico "Diario El Profeta"',
+            'img'=> 'https://4.bp.blogspot.com/-dQmFsc4pY58/Vup7zY23d4I/AAAAAAAAQuk/9zTi7LxRn44nP4Qzm0bHKpYeb-zveCu4A/s1600/hogwarts%2B%25281%2529.jpg',
+        ]);
+
+        TrainRoute::factory()->create([
+            'name'=> 'Málaga María Zambrano Station - Hogwarts School of Witchcraft and Wizardry',
+            'origin'=> 'Málaga',
+            'destination'=> 'Hogwarts',
+            'date'=> '2023-01-19',
+            'departureTime'=> '11:00:00',
+            'arrivalTime'=> '13:00:00',
+            'routeLength'=> '120',
+            'availableSeats'=> '150',
+            'features' => 'Disponible el carrito de dulces - ejemplar Periódico "Diario El Profeta"',
+            'img'=> 'https://4.bp.blogspot.com/-dQmFsc4pY58/Vup7zY23d4I/AAAAAAAAQuk/9zTi7LxRn44nP4Qzm0bHKpYeb-zveCu4A/s1600/hogwarts%2B%25281%2529.jpg',
+        ]);
 
         TrainRoute::factory(5)->create();
 
