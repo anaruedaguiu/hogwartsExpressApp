@@ -113,8 +113,6 @@
                 </div>
 
 
-
-
         <div class="formButtons">
             <form action="{{ route('deleteTrainRoute', ['id'=> $trainRoute->id]) }}" method="post">
                 <div class="allButtonsBox">
@@ -140,18 +138,13 @@
 
     </div>
 
-
-
+</div>
 
 </div>
 
+        @endforeach
 
-
-</div>
-
-@endforeach
-
-
+        {!! $trainRoutes->links() !!}
     </div>
 
 @endsection

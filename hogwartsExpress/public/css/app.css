@@ -26,6 +26,11 @@
     border: 0!important;
 }
 
+
+.navbar-expand-md{
+    justify-content:center!important;
+}
+
 .footerTrainRoute{
     color: #d1c5ac;
     width: 100%;
@@ -190,6 +195,7 @@
     font-weight: bold;
     border-color: transparent !important;
     padding: 5px;
+    margin-bottom:20px;
 }
 .textCreateButton {
     color: #D1C5AC;

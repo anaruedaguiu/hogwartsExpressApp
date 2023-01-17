@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'HogwartsExpress') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -16,7 +16,8 @@
     <link href="{{ asset('css/show.css') }}" rel="stylesheet">
     <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
-
+    <link rel="shortcut icon" type="image/png" href="{{ asset('imagenes/sortingHat.webp') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('imagenes/sortingHat.webp') }}">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
