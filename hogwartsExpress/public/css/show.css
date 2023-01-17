@@ -8,6 +8,7 @@
 .dataTrainRoute {
     font-family: Sofia Pro;
     font-size: 18px !important;
+    color: #D1C5AC !important;
 }
 
 .dataTrainRoute h1 {
@@ -46,12 +47,14 @@
 .descriptionRoute h2 {
     font-family: Bluu Next;
     font-size: 24px !important;
+    color: #D1C5AC !important;
 }
 
 .descriptionRoute p {
     font-family: Sofia Pro;
     font-size: 18px !important;
     font-weight: lighter;
+    color: #D1C5AC !important;
 }
 
 /*buttons*/
@@ -89,9 +92,8 @@
 
 @media screen and (min-width: 920px) {
 
-    main.py-4 {
+    .trainRouteContainer {
         display: flex;
-        flex-direction:column;
         justify-content: center;
     }
 

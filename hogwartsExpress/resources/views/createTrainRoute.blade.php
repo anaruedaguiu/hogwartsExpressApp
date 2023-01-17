@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="buttonCancelBox">
-                            <button class="buttonCancelForm" ><a style="text-decoration:none" href="{{ route('home') }}">Cancel</a></button>
+                            <a style="text-decoration:none" href="{{ route('home') }}">Cancel</a>
                         </div>
                     </div>
 
