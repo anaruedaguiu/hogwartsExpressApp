@@ -17,7 +17,7 @@ class TrainRouteController extends Controller
     public function index()
     {
         //
-        $trainRoutes = TrainRoute::orderBy('date', 'desc')->get();
+        $trainRoutes = TrainRoute::get();
         //var_dump($trainRoutes);
         return view('home', compact('trainRoutes'));
 
@@ -60,7 +60,6 @@ class TrainRouteController extends Controller
     {
         //
         $trainRoute = TrainRoute::find($id);
-
 
         return view('showTrainRoute', compact('trainRoute'));
     }

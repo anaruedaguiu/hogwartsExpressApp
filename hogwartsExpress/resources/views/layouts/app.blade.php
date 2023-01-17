@@ -87,10 +87,10 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
 
-        
+
         <footer class="footerTrainRoute">
             <div class="group1">
-                
+
                 <div class="box1">
                     <h2>Our site</h2>
                     <p>Home</p>
@@ -103,7 +103,7 @@
                     <h2>My Wallet</h2>
                     <p>My tickets</p>
                 </div>
-                
+
             </div>
 
             <div class="group2">
