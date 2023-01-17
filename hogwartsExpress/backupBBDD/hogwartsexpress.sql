@@ -106,7 +106,7 @@ CREATE TABLE `train_routes` (
   `datetime` datetime NOT NULL,
   `departureTime` time NOT NULL,
   `arrivalTime` time NOT NULL,
-  `routeLenght` varchar(255) NOT NULL,
+  `routeLength` varchar(255) NOT NULL,
   `availableSeats` int(11) NOT NULL,
   `features` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL,

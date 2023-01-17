@@ -5,6 +5,41 @@ body{
 
 
 
+.footerTrainRoute{
+    color: #d1c5ac;
+    width: 100%;
+}
+
+.footerTrainRoute .group1{
+    /* Border:2px solid red; */
+    font-family: 'sofia pro';
+    width: 100%;
+    line-height: 50%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footerTrainRoute .group1 h2{
+    font-family: 'bluu next';
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.footerTrainRoute .group2{
+    font-family: 'bluu next';
+    padding: 15px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .footerTrainRoute .group1{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        padding: 10px 0px;
+    }
+}
 .bodyApp {
     background-color: #110F1C !important;
 }

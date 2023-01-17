@@ -13,6 +13,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/show.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
 
 
@@ -85,5 +87,29 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
 
+        
+        <footer class="footerTrainRoute">
+            <div class="group1">
+                
+                <div class="box1">
+                    <h2>Our site</h2>
+                    <p>Home</p>
+                    <p>Routes</p>
+                    <p>News</p>
+                    <p>Offerts</p>
+                </div>
+
+                <div class="box2">
+                    <h2>My Wallet</h2>
+                    <p>My tickets</p>
+                </div>
+                
+            </div>
+
+            <div class="group2">
+                <p>&copy; 2023 <b>Ministry of Magic</b></p>
+            </div>
+        </footer>
 </body>
 </html>
+
