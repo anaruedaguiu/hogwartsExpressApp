@@ -43,6 +43,8 @@
         </button>
     </div>
 
+
+
     <div class="cardPosition">
         @foreach ($trainRoutes as $trainRoute)
         <div class="main-content">
