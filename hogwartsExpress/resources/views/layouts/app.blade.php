@@ -14,6 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/show.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
 
 

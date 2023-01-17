@@ -16,7 +16,7 @@ class TrainRoute extends Model
         'date',
         'departureTime',
         'arrivalTime',
-        'routeLenght',
+        'routeLength',
         'availableSeats',
         'features',
         'img',

@@ -129,3 +129,4 @@ class TrainRouteController extends Controller
         return redirect()->route('home');
     }
 }
+
