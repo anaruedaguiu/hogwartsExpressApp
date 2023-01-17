@@ -1,0 +1,106 @@
+
+.trainRouteSection .dataTrainRoute, .trainRouteSection .descriptionRoute, .trainRouteSection .buttonsRoute {
+    padding: 20px 30px;
+}
+
+/*titles*/
+
+.dataTrainRoute {
+    font-family: Sofia Pro;
+    font-size: 18px !important;
+}
+
+.dataTrainRoute h1 {
+    font-family: Bluu Next;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.originDestinationRoute {
+    display: flex;
+}
+
+.originDestinationRoute h2:first-child {
+    margin-right: 30px !important;
+}
+
+.originDestinationRoute h2{
+    font-family: Sofia Pro;
+    font-size: 18px !important;
+    font-weight: lighter;
+}
+
+.originDestinationRoute h2 span{
+    font-weight: bolder;
+}
+
+/*img*/
+
+.trainRouteSection .imgContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*description*/
+
+.descriptionRoute h2 {
+    font-family: Bluu Next;
+    font-size: 24px !important;
+}
+
+.descriptionRoute p {
+    font-family: Sofia Pro;
+    font-size: 18px !important;
+    font-weight: lighter;
+}
+
+/*buttons*/
+
+.buttonsRoute {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserveButtons button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: transparent !important;
+    font-family: Sofia Pro;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.reserveButtons button a {
+    color: #D1C5AC !important;
+    text-decoration: none !important;
+}
+
+.backButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #D1C5AC !important;
+    text-decoration: none !important;
+    border-color: transparent !important;
+    font-family: Sofia Pro;
+    font-weight: lighter;
+    font-size: 18px;
+    text-decoration: none !important;
+    padding: 10px 20px;
+}
+
+@media screen and (min-width: 920px) {
+
+    main.py-4 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .trainRouteSection {
+        max-width: 920px;
+    }
+
+    .trainRouteSection .imgContainer {
+        padding: 0px 30px;
+        overflow: hidden;
+        max-height: 470px;
+    }
+  }
