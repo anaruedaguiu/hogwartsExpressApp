@@ -41,8 +41,13 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 
 $carousel-transition-duration:       .6s;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+
+
+* {cursor: url(../../public/imagenes/MagicWand02.cur), auto !important;}
+
 .main-content {
-    margin: auto;
+    margin: 20px;
     width: 21rem !important;
     text-transform: uppercase;
 
@@ -54,12 +59,12 @@ $carousel-transition:                transform $carousel-transition-duration eas
     background: #f3f1c9;
     border: 2px solid #222;
     cursor: default;
+    min-height: auto;
   }
   .ticket__main {
     display: grid;
     grid-template-columns: repeat(6, 1fr) 120px;
-    grid-template-rows: repeat(4, -webkit-min-content) auto;
-    grid-template-rows: repeat(4, min-content) auto;
+
     padding: 10px;
   }
 
