@@ -33,3 +33,281 @@
         padding: 10px 0px;
     }
 }
+.bodyApp {
+    background-color: #110F1C !important;
+}
+
+.navBarApp {
+    /* background-color: #110F1C !important; */
+    color: #D1C5AC !important;
+    border: 2px solid red;
+}
+
+.navBox {
+    color: #D1C5AC !important;
+    border: solid 5px green;
+}
+
+.navButton {
+    color: #D1C5AC !important;
+    border: 5px solid yellow;
+}
+
+.navHello {
+    color: #D1C5AC !important;
+}
+
+/*____DISEÑO BOTÓN CREAR NUEVA RUTA____*/
+
+.createButton {
+    background-color: #D1C5AC;
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: transparent !important;
+    padding: 5px;
+}
+.textCreateButton {
+    color: #110F1C;
+    font-family: Sofia Pro;
+    font-weight: lighter;
+}
+
+
+/*____DISEÑO SLIDER____*/
+
+.carouselDesign {
+    /* object-fit: scale-down;
+    height: 50vh;
+    width: 50vh; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    overflow: auto !important;
+}
+
+.imageSize {
+    object-fit: cover !important;
+    height: 50vh !important;
+    width: 100% !important;
+    z-index: 0 !important;
+}
+
+.textDesign {
+    /* background-color: blue !important; */
+    /* width: 100% !important; */
+    /* z-index: 1 !important; */
+    position: absolute !important;
+    top: 35% !important;
+    /* left: 0  !important; */
+    color: #D1C5AC !important;
+    /* -webkit-text-stroke: 1px black; */
+    /* border: 10px solid yellow !important; */
+    width: 70% !important;
+    height: 30vh !important;
+    /* font-size: 100% !important; */
+    font-family: Bluu Next !important;
+    /* text-overflow: clip !important; */
+}
+
+.textSize1 {
+    font-size: 350% !important;
+    text-align: center !important;
+    z-index: 1 !important;
+    /* background-color: green !important; */
+    /* position: absolute !important; */
+    /* top: 50% !important; */
+    /* left: 0 !important; */
+}
+
+.textSize2 {
+    font-size: 100% !important;
+    text-align: center !important;
+}
+
+
+
+/*____DISEÑO CARDS____*/
+
+.titleCard {
+    font-family: Bluu Next;
+    color: #110F1C  !important;
+    /* font-size: 20px; */
+    text-align: start;
+    font-weight: bold;
+    /* font-size: 24px !important; */
+    padding: 5px;
+    font-size: 18px;
+}
+
+.infoCard {
+    font-family: Sofia Pro;
+    color: #110F1C !important;
+    text-align: start;
+    font-size: 14px !important;
+}
+
+.cardPosition {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center !important;
+}
+
+.card {
+    /* margin-right: 20rem !important;
+    margin-left: 20rem !important; */
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 22rem !important;
+    /* height: 20vh !important; */
+    /* border: 10px solid red !important; */
+    overflow: auto !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center !important;
+    align-content: center;
+    background-color: #D1C5AC !important;
+    box-shadow: 0px 0px 5px 0px rgba(209, 197, 172, 1);
+}
+
+.card-body {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    /* overflow: auto !important; */
+    /* margin-right: 0 !important;
+    margin-left: 0 !important; */
+    background-color: #D1C5AC !important;
+    /* padding: 0 !important; */ 
+    /* margin: 0 !important; */
+    /* box-sizing: border-box !important;
+    background-size: cover !important; */
+}
+
+.card-img-top {
+    /* width: 21.8rem !important;
+    height: 28vh !important; */
+}
+
+
+/*____DISEÑO BOTONES CARD____*/
+
+.allButtons {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: auto !important;
+    /*align-content: space-between !important; */
+}
+
+.selectButton {
+    /* display: flex;
+    justify-content: start !important; */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: transparent !important;
+    /* width: 5rem;
+    padding: 2px; */
+    /* font-family: Sofia Pro;
+    font-weight: lighter !important; */
+    /* width: 40%;
+    height: auto !important; */
+    font-size: 20px;
+    /* display: flex;
+    justify-content: center !important; */
+    /* color: #D1C5AC !important; */
+    text-decoration: none !important;
+    /* margin-right: 20px; */
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
+    width: 30%;
+}
+
+.selectText {
+    color: #D1C5AC;
+    font-family: Sofia Pro;
+    font-weight: lighter !important;
+}
+
+.editAndDeleteButton {
+    /* display: flex;
+    flex-direction: row !important;
+    justify-content: end !important; */
+}
+
+.editButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #D1C5AC;
+    border-color: transparent !important;
+    /* width: 5rem; */
+    font-family: Sofia Pro;
+    /* display: flex;
+    justify-content: center !important; */
+    /* width: 100%;
+    height: auto !important; */
+    font-size: 20px;
+    font-family: Sofia Pro;
+    text-decoration: none !important;
+    /* margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10px; */
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.editText {
+    color: #D1C5AC;
+    font-family: Sofia Pro;
+    font-weight: lighter !important;
+}
+
+.removeButton {
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    color: #D1C5AC;
+    border-color: transparent !important;
+    /* width: 5rem; */
+    font-family: Sofia Pro;
+    /* display: flex;
+    justify-content: center !important; */
+    /* border: none !important;
+    outline: none !important;
+    box-shadow: none !important; */
+    /* width: 100%;
+    height: auto !important; */
+    font-size: 20px;
+    color: #D1C5AC !important;
+    font-family: Sofia Pro;
+    text-decoration: none !important;
+    /* margin-bottom: 5px;
+    margin-top: 5px; */
+    width: 30%;
+    height: 0.5rem;
+}
+
+.removeText {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #D1C5AC;
+    border-color: transparent !important;
+    font-family: Sofia Pro;
+    font-weight: lighter !important;
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+/* .formStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    align-self: center !important;
+} */
