@@ -59,6 +59,7 @@ On this project we use PHP Laravel to Create the CRUD, the User Management, Data
 - Project sketch and final design: Figma
 - Visual Studio Code
 - Trello
+- DrawSQL
 - Padlet
 - Planning Poker
 - Zoom
