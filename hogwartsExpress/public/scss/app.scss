@@ -36,7 +36,6 @@ $border-color: #444;
 	grid-area: title;
 	grid-column: span 7;
 	grid-row: 1;
-	font: 900 20px 'Sofia Pro', sans-serif;
 	padding: 5px 0 5px 20px;
 	letter-spacing: 6px;
 	background: #111;
@@ -46,6 +45,7 @@ $border-color: #444;
 .header a{
     color: white!important;
     text-decoration:none!Important;
+    font: 900 20px 'Bluu next', sans-serif;
 }
 
 .info {

@@ -1,13 +1,73 @@
-body{
-    cursor: url("")!important;
+@import url('https://fonts.cdnfonts.com/css/bluu-next');
+
+.card-img-top{
+    height: 119px;
+}
+
+.carousel-caption h3{
+    font-family: 'Bluu next', sans-serif;
+    font-size: 6vh;
+    position: relative;
+    text-align: center;
+    text-shadow: #000 1px 0 10px;
+    align-self: center;
+    }
+
+.pagination{
+    --bs-pagination-bg: transparent!important;
+    --bs-pagination-border-color: #D1C5AC!important;
+    --bs-pagination-color: #D1C5AC!important;
+    --bs-pagination-hover-color: #000!important;
+    --bs-pagination-hover-bg: #D1C5AC!important;
+    --bs-pagination-hover-border-color: #D1C5AC!important;
+    --bs-pagination-focus-color: #D1C5AC!important;
+    --bs-pagination-focus-bg: #D1C5AC!important;
+    --bs-pagination-focus-box-shadow:#D1C5AC!important;
+    --bs-pagination-active-color: #fff;
+    --bs-pagination-active-bg: #D1C5AC!important;
+    --bs-pagination-active-border-color: #D1C5AC!important;
+}
+
+.justify-content-sm-between {
+    justify-content: center !important;
+    flex-direction: column;
+    width:380px;
+}
+
+.container{
+    margin-left:0!important;
+    margin-right:0!important;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 0!important;
+    border-radius: 0!important;
+    transition: 0!important;
+    box-shadow: none!important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0!important;
+    border:0!important;
+}
+
+.navButton {
+    color: #D1C5AC !important;
+    border: 0!important;
 }
 
 
-
+.navbar-expand-md{
+    justify-content:center!important;
+}
 
 .footerTrainRoute{
     color: #d1c5ac;
     width: 100%;
+    padding: 0 30px 0 30px;
     background-image: url(../imagenes/darkSky.jpg);
     background-size: cover;
     padding-top: 30px;
@@ -50,7 +110,7 @@ body{
 
 .navBox {
     color: #D1C5AC !important;
-    border: solid 5px green;
+
 }
 
 .navButton {
@@ -172,6 +232,7 @@ body{
     font-weight: bold;
     border-color: transparent !important;
     padding: 5px;
+    margin-bottom:20px;
 }
 .textCreateButton {
     color: #D1C5AC;
@@ -184,31 +245,57 @@ body{
 
 
 a.diamont {
-    border:0!important;
-    color:white;
-    font-size: 10px;
-    background:rgb(0, 142, 90);
-    margin:10px;
-    text-transform:uppercase;
-    padding:4px;
-    text-decoration:none;
+    border: 0!important;
+    background-color:#51614F;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
 }
 
-a.inscribe, a.unscribe {
-    border:1px solid black!important;
-    color:black;
-    font-size: 10px;
-    background:transparent;
-    margin:10px;
-    text-transform:uppercase;
-    padding:4px;
-    text-decoration:none;
+a.inscribe {
+    border: 0!important;
+    background-color:#e4ca6d;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
 }
-button[type=submit]{
+
+
+a.unscribe {
+    border: 0!important;
+    background-color:#14637F;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
+}
+
+.allButtonsBox button[type=submit]{
     border:0!important;
-    color:white;
-    font-size: 10px;
-    background:rgb(0, 0, 255);
-    margin:10px;
-    text-transform:uppercase;
+    background-color: #A95F59;
+    color:#ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 3px!important;
+    margin-right: 5px;
 }
+

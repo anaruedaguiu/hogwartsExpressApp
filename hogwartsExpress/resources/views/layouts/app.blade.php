@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'HogwartsExpress') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -16,7 +16,8 @@
     <link href="{{ asset('css/show.css') }}" rel="stylesheet">
     <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
-
+    <link rel="shortcut icon" type="image/png" href="{{ asset('imagenes/sortingHat.webp') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('imagenes/sortingHat.webp') }}">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
@@ -29,7 +30,8 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-dark shadow-sm">
             <div class="container navBox">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="/imagenes/logoAnden934V01.jpeg" alt="Logo Anden 9 3/4" style="width:150px;"/>
+                    {{-- {{ config('app.name', 'Laravel') }} --}}
                 </a>
                 <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon navButton navHello"></span>
@@ -87,10 +89,10 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
 
-        
+
         <footer class="footerTrainRoute">
             <div class="group1">
-                
+
                 <div class="box1">
                     <h2>Our site</h2>
                     <p>Home</p>
@@ -103,7 +105,7 @@
                     <h2>My Wallet</h2>
                     <p>My tickets</p>
                 </div>
-                
+
             </div>
 
             <div class="group2">

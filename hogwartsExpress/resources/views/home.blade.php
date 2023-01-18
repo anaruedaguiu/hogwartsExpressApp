@@ -27,7 +27,7 @@
                         <img src="{{ $trainRoute->img }}" class="d-block imageSize w-100" alt="{{ $trainRoute->name }}">
 
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h3>{{$trainRoute['name']}}</h3>
                     </div>
                 </div>
@@ -74,11 +74,11 @@
 
                     <div class="info departure">
                         <div class="info__item">Date</div>
-                        <div class="info__detail">{{ $trainRoute->date }}</div>
+                        <div class="departure__detail">{{ $trainRoute->date }}</div>
                     </div>
                     <div class="info arrival">
                         <div class="info__item">Duration</div>
-                        <div class="info__detail">{{ $trainRoute->routeLenght }} mins.</div>
+                        <div class="info__detail">{{ $trainRoute->routeLength }} mins.</div>
                     </div>
                     <div class="info departure">
                         <div class="info__item">Depart</div>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="info seats">
                         <div class="info__item">PLACES</div>
-                        {{ $trainRoute->availableSeats }}
+                        <div class="seats__detail">{{ $trainRoute->availableSeats }}</div>
                     </div>
 
                     <div class="fineprint">
@@ -96,8 +96,8 @@
                             <a href="{{ route('showTrainRoute', $trainRoute->id) }}">+INFO </a>
                     </div>
 
+
                     <div class="snack">
-                    @if(Auth::check() && Auth::user()->isAdmin)
                         <a href="{{route('inscribe', $trainRoute->id)}}">
                         <svg viewBox="0 -11 414.00053 414">
                         <path d="m202.480469 352.128906c0-21.796875-17.671875-39.46875-39.46875-39.46875-21.800781 0-39.472657 17.667969-39.472657 39.46875 0 21.800782 17.671876 39.472656 39.472657 39.472656 21.785156-.023437 39.445312-17.683593 39.46875-39.472656zm0 0"></path>
@@ -105,14 +105,12 @@
                         <path d="m412.699219 63.554688c-1.3125-1.84375-3.433594-2.941407-5.699219-2.941407h-311.386719l-3.914062-24.742187c-3.191407-20.703125-21.050781-35.9531252-42-35.871094h-42.699219c-3.867188 0-7 3.132812-7 7s3.132812 7 7 7h42.699219c14.050781-.054688 26.03125 10.175781 28.171875 24.0625l33.800781 213.515625c3.191406 20.703125 21.050781 35.957031 42 35.871094h208.929687c3.863282 0 7-3.132813 7-7 0-3.863281-3.136718-7-7-7h-208.929687c-14.050781.054687-26.03125-10.175781-28.171875-24.0625l-5.746094-36.300781h213.980469c18.117187-.007813 34.242187-11.484376 40.179687-28.597657l39.699219-114.578125c.742188-2.140625.402344-4.511718-.914062-6.355468zm0 0"></path>
                         </svg>
                         </a>
-                    @endif
                     </div>
+
                 <div class="barcode">
                     <div class="barcode__scan"></div>
                     <div class="barcode__id">001256733</div>
                 </div>
-
-
 
 
         <div class="formButtons">
@@ -131,7 +129,11 @@
                             </button>
                         @endif
 
+<<<<<<< HEAD
                         @if(Auth::check() && Auth::user() && Auth::once())
+=======
+                        @if(Auth::check() && Auth::user())
+>>>>>>> 056e920339742498cddc9cb312e1efd01dfc4c89
                             <a href="{{route('inscribe', $trainRoute->id)}}" class="button inscribe">Subscribe</a>
                             <a href="{{route('unscribe', $trainRoute->id)}}" class="button unscribe">Unsubscribe</a>
                         @endif
@@ -142,18 +144,13 @@
 
     </div>
 
-
-
+</div>
 
 </div>
 
+        @endforeach
 
-
-</div>
-
-@endforeach
-
-
+        {!! $trainRoutes->links() !!}
     </div>
 
 @endsection

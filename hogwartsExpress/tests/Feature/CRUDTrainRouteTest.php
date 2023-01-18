@@ -23,7 +23,7 @@ class CRUDTrainRouteTest extends TestCase
 
         $response->assertStatus(200);
     } */
-    
+
     public function test_listTrainRouteAppearInHomeView(){
         $this->withExceptionHandling();
 
@@ -60,7 +60,7 @@ class CRUDTrainRouteTest extends TestCase
 
         $userAdmin = User::factory()->create(['isAdmin' => true]);
         $this->actingAs($userAdmin);
-        
+
         $response = $this->post(route('storeTrainRoute'),
         [
             'name'=> 'name',
@@ -72,7 +72,7 @@ class CRUDTrainRouteTest extends TestCase
             'routeLength'=> 'routeLength',
             'availableSeats'=> '120',
             'features' => 'features',
-            'img'=> 'img',   
+            'img'=> 'img',
         ]);
 
         $this->assertCount(1, TrainRoute::all());
@@ -91,7 +91,7 @@ class CRUDTrainRouteTest extends TestCase
             'routeLength'=> 'routeLength',
             'availableSeats'=> '120',
             'features' => 'features',
-            'img'=> 'img',   
+            'img'=> 'img',
         ]);
 
         $this->assertCount(1, TrainRoute::all());
@@ -127,5 +127,9 @@ class CRUDTrainRouteTest extends TestCase
         $response->assertStatus(200)
                 ->assertViewIs('showTrainRoute');
     }
+
+
+
+
 }
 

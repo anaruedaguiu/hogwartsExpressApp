@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\TrainRoute;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class TrainRouteController extends Controller
@@ -17,8 +18,8 @@ class TrainRouteController extends Controller
     public function index()
     {
         //
-        $trainRoutes = TrainRoute::get();
-        //var_dump($trainRoutes);
+
+        $trainRoutes = TrainRoute::orderBy('date', 'desc')->paginate(6);
         return view('home', compact('trainRoutes'));
 
     }
@@ -89,7 +90,7 @@ class TrainRouteController extends Controller
     {
         //
         $trainRoute = request()->except('_token', '_method');
-        
+
         TrainRoute::where('id', '=', $id)->update($trainRoute);
 
         return redirect()->route('home');
