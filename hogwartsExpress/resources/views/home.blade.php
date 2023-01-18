@@ -129,8 +129,10 @@
                             </button>
                         @endif
 
+                        @if(Auth::check() && Auth::user())
                             <a href="{{route('inscribe', $trainRoute->id)}}" class="button inscribe">Subscribe</a>
                             <a href="{{route('unscribe', $trainRoute->id)}}" class="button unscribe">Unsubscribe</a>
+                        @endif
 
                 </div>
             </form>
