@@ -129,11 +129,7 @@
                             </button>
                         @endif
 
-<<<<<<< HEAD
-                        @if(Auth::check() && Auth::user() && Auth::once())
-=======
                         @if(Auth::check() && Auth::user())
->>>>>>> 056e920339742498cddc9cb312e1efd01dfc4c89
                             <a href="{{route('inscribe', $trainRoute->id)}}" class="button inscribe">Subscribe</a>
                             <a href="{{route('unscribe', $trainRoute->id)}}" class="button unscribe">Unsubscribe</a>
                         @endif
