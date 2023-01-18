@@ -1,7 +1,8 @@
-## Project name
-<p> 
-  <h1 align="center">Hogwarts Express App 🎟️🚂</h1>
-</p>
+## Project name <h1 align="center">Hogwarts Express App 🎟️🚂</h1>
+
+<div align="center"> 
+  <img src="hogwartsExpress/public/images/darkLogo.png" width="300">
+</div>
 
 ## Description
 Design and develop a web application to manage ***Hogwarts Express*** routes online.
@@ -30,7 +31,7 @@ On this project we use PHP Laravel to Create the CRUD, the User Management, Data
   <div class="d-flex flex-nowrap">
     <img src="hogwartsExpress/public/images/homViewScreenshotFigma.png" width="150">
     <img src="hogwartsExpress/public/images/cardsScreenshotFigma.png" width="150">
-   <img src="hogwartsExpress/public/images/otherViewsScreenshotFigma.png" width="450">
+    <img src="hogwartsExpress/public/images/otherViewsScreenshotFigma.png" width="450">
   </div>
 </div>
 
