@@ -15,6 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/show.css') }}" rel="stylesheet">
     <link href="{{ asset('css/create.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="{{ asset('imagenes/sortingHat.webp') }}">
     <link rel="shortcut icon" sizes="192x192" href="{{ asset('imagenes/sortingHat.webp') }}">
