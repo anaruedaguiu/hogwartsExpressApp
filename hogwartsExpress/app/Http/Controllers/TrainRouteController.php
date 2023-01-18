@@ -20,9 +20,6 @@ class TrainRouteController extends Controller
         //
 
         $trainRoutes = TrainRoute::orderBy('date', 'desc')->paginate(6);
-
-
-        //var_dump($trainRoutes);
         return view('home', compact('trainRoutes'));
 
     }
