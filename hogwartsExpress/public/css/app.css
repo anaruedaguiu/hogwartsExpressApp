@@ -1,5 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/bluu-next');
 
+.card-img-top{
+    height: 119px;
+}
+
+.carousel-caption h3{
+    font-family: 'Bluu next', sans-serif;
+    font-size: 6vh;
+    position: relative;
+    text-align: center;
+    text-shadow: #000 1px 0 10px;
+    align-self: center;
+    }
 
 .pagination{
     --bs-pagination-bg: transparent!important;
@@ -19,6 +31,7 @@
 .justify-content-sm-between {
     justify-content: center !important;
     flex-direction: column;
+    width:380px;
 }
 
 .container{
@@ -229,31 +242,56 @@
 
 
 a.diamont {
-    border:0!important;
-    color:white;
-    font-size: 10px;
-    background:rgb(0, 142, 90);
-    margin:10px;
-    text-transform:uppercase;
-    padding:4px;
-    text-decoration:none;
+    border: 0!important;
+    background-color:#51614F;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
 }
 
-a.inscribe, a.unscribe {
-    border:1px solid black!important;
-    color:black;
-    font-size: 10px;
-    background:transparent;
-    margin:10px;
-    text-transform:uppercase;
-    padding:4px;
-    text-decoration:none;
+a.inscribe {
+    border: 0!important;
+    background-color:#e4ca6d;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
 }
-button[type=submit]{
+
+
+a.unscribe {
+    border: 0!important;
+    background-color:#14637F;
+    color: #ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 12px!important;
+    text-decoration: none;
+    text-transform: none;
+    margin-right: 5px;
+}
+
+.allButtonsBox button[type=submit]{
     border:0!important;
-    color:white;
-    font-size: 10px;
-    background:rgb(0, 0, 255);
-    margin:10px;
-    text-transform:uppercase;
+    background-color: #A95F59;
+    color:#ffffff;
+    border-color: transparent !important;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 3px!important;
+    margin-right: 5px;
 }

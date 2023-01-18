@@ -94,7 +94,7 @@ $carousel-transition:                transform $carousel-transition-duration eas
 		letter-spacing: 0.2px;
 	}
 	&__detail {
-		font: 900 10px/1 'Sofia Pro';
+		font: bold 11px/1 'Bluu next', sans-serif;
 		margin: 4px 0;
 
 	}
@@ -155,10 +155,16 @@ $carousel-transition:                transform $carousel-transition-duration eas
 	}
 }
 
-.departure {
-	grid-column-start: span 5;
-}
 
+
+.departure  {
+    grid-column-start: span 5;
+	&__detail {
+		font: bold 14px/1 'Bluu next', sans-serif;
+		margin: 4px 0;
+
+	}
+}
 .passenger, .departure, .date {
 	border-left: 1px solid black;
 }
@@ -173,12 +179,18 @@ width:110px;
 .date, .time {
 	grid-column-start: span 2;
 }
-.seat{
-    grid-column-start: span 2;
+.seats{
     border: 1px solid black;
     border-width: 0 1px 1px 0;
     padding: 8px;
+    &__detail {
+		font: bold 16px/1 'Bluu next', sans-serif;
+		margin: 4px 0;
+
+	}
 }
+
+
 
 .formButtons{
    display:grid;
@@ -188,8 +200,9 @@ width:110px;
 .allButtonsBox {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-row: 1;
-    margin:auto;
+    border-top: 2px dotted black;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .fineprint {

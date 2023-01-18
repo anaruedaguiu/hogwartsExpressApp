@@ -27,7 +27,7 @@
                         <img src="{{ $trainRoute->img }}" class="d-block imageSize w-100" alt="{{ $trainRoute->name }}">
 
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h3>{{$trainRoute['name']}}</h3>
                     </div>
                 </div>
@@ -74,11 +74,11 @@
 
                     <div class="info departure">
                         <div class="info__item">Date</div>
-                        <div class="info__detail">{{ $trainRoute->date }}</div>
+                        <div class="departure__detail">{{ $trainRoute->date }}</div>
                     </div>
                     <div class="info arrival">
                         <div class="info__item">Duration</div>
-                        <div class="info__detail">{{ $trainRoute->routeLenght }} mins.</div>
+                        <div class="info__detail">{{ $trainRoute->routeLength }} mins.</div>
                     </div>
                     <div class="info departure">
                         <div class="info__item">Depart</div>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="info seats">
                         <div class="info__item">PLACES</div>
-                        {{ $trainRoute->availableSeats }}
+                        <div class="seats__detail">{{ $trainRoute->availableSeats }}</div>
                     </div>
 
                     <div class="fineprint">
