@@ -1,6 +1,7 @@
 ## Project name
 <p> 
   <h1 align="center">Hogwarts Express App 🎟️🚂</h1>
+</p>
 
 ## Description
 Design and develop a web application to manage ***Hogwarts Express*** routes online.
@@ -10,7 +11,6 @@ Design and develop a web application to manage ***Hogwarts Express*** routes onl
 Users can watch the train routes' description, inscribe and unsubscribe themself. The Admin manage the app (CRUD).
 
 On this project we use PHP Laravel to Create the CRUD, the User Management, Database Relationships and CRUD's Testing (TDD: Test-Driven Development).
-</p>
 
 ## Participants
 - [Veronika Komarova](https://github.com/VeronikaKoma) - SCRUM Master
@@ -20,7 +20,19 @@ On this project we use PHP Laravel to Create the CRUD, the User Management, Data
 - [Paloma Babot](https://github.com/Uxoa) - Developer
 
 ## Screenshots
-
+<h3 align="center">Sketch</h3>
+<p align="center"> 
+<img src="hogwartsExpress/public/images/sketchScreenshotFigma.png" width="700px">
+</p>
+ 
+<h3 align="center">Figma</h3>
+<div align="center">
+  <div class="d-flex flex-nowrap">
+    <img src="hogwartsExpress/public/images/homViewScreenshotFigma.png" width="150">
+    <img src="hogwartsExpress/public/images/cardsScreenshotFigma.png" width="150">
+   <img src="hogwartsExpress/public/images/otherViewsScreenshotFigma.png" width="450">
+  </div>
+</div>
 
 ## Stacks 
 * Frontend: HTML5, CSS3, SCSS, SASS.
