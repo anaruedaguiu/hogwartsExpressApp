@@ -5,7 +5,7 @@
         <div class="containerCreate">
             <div class="titleCreateForm">
                 <h2>New Train Route</h2>
-                <p>""Juro solemnemente que esto es una travesura". <b>George Weasley</b></p>
+                <p>"I solemnly swear that i am up to no good". <b>George Weasley</b></p>
             </div>
             <div class="createFormBox">
                 <form class="justify-content-center" action="{{ route('storeTrainRoute') }}" method="post">

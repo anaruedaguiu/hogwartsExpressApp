@@ -5,7 +5,7 @@
         <div class="containerCreate">
             <div class="titleCreateForm">
                 <h2>Edit a Train Route</h2>
-                <p>"Las palabras son, en mi no tan humilde opinión, nuestra más inagotable fuente de magia, capaces de infringir daño y de remediarlo". <b>Albus Percival Wulfric Brian Dumbledore</b></p>
+                <p>"Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it". <b>Albus Percival Wulfric Brian Dumbledore</b></p>
             </div>
             <div class="createFormBox">
                 <form class="justify-content-center" action="{{ route('storeTrainRoute') }}" method="post">
