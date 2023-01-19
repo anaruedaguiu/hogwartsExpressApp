@@ -51,7 +51,7 @@ class DatabaseSeeder extends Seeder
 
 
         TrainRoute::factory()->create([
-            'name'=> 'Victoria Kent - Diagon Alley',
+            'name'=> 'Victoria Kent Train Station - Diagon Alley',
             'origin'=> 'Málaga',
             'destination'=> 'Diagon Alley',
             'date'=> '2023-04-07',

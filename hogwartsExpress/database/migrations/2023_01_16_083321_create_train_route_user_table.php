@@ -22,8 +22,6 @@ return new class extends Migration
             $table->unsignedBigInteger('train_route_id');
             $table->foreign('train_route_id')->references('id')->on('train_routes');
 
-            /* $table->boolean('userInscribe'); */
-
             $table->timestamps();
         });
     }
