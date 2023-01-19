@@ -109,3 +109,14 @@
     text-decoration: none;
     color: #110F1C !important;
 }
+
+.allButtonsBox a, .allButtonsBox button {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: #D1C5AC !important;
+    font-weight: bold !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.allButtonsBox a:hover, .allButtonsBox button:hover {
+    color: #110F1C !important;
+}
