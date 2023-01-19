@@ -103,3 +103,9 @@
     font-size: 18px;
 }
 
+.ticket__main .fineprint a{
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    color: #110F1C !important;
+}
