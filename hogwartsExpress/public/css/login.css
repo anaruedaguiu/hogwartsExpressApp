@@ -9,10 +9,96 @@
     background-color: #d1c5ac;
 }
 
+.loginContainer .card .card-header {
+    font-family: Bluu Next;
+    font-size: 24px !important;
+}
+
+.loginContainer .card .card-body {
+    padding: 40px;
+}
+
 
 .loginContainer .form-control {
     border-radius: 0 !important;
     background-color: #110F1C !important;
     border: 1px solid #110F1C !important;
+    color: #d1c5ac !important;
     font-size: 18px !important;
+}
+
+.loginContainer .form-control::placeholder {
+    color: #d1c5ac !important;
+}
+
+.loginContainer label {
+    color: #110F1C !important;
+    font-weight: bold;
+}
+
+.loginContainer button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: transparent !important;
+    font-family: Sofia Pro;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.loginContainer button:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #110F1C !important;;
+}
+
+.loginContainer .card .card-body a.btn-link {
+    font-family: Sofia Pro;
+    font-weight: bold;
+    color: #110F1C !important;
+    text-decoration: none;
+}
+
+
+/*HOME*/
+
+
+
+.createButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: transparent !important;
+    font-family: Sofia Pro;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 0;
+    margin: 40px 0;
+}
+
+.createButton a {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #110F1C !important;
+}
+
+.createButton a .textCreateButton:hover {
+    color: #110F1C !important;
+}
+
+.nav-link {
+    text-align: right;
+    padding-right: 12px !important;
+    font-family: Sofia Pro;
+    font-size: 18px !important;
+    color: #d1c5ac !important;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #110F1C !important;
+    border-color: transparent !important;
+}
+
+.navbar-nav .dropdown-menu a {
+    text-align: right;
+    font-family: Sofia Pro;
+    color: #d1c5ac !important;
+    font-size: 18px;
 }

@@ -1,16 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="d-flex justify-content-center">
-        @if(Auth::check() && Auth::user()->isAdmin)
-            <button class="createButton">
-                <a href="{{ route('createTrainRoute') }}" style="text-decoration:none">
-                    <div class="textCreateButton"> NEW TRAIN ROUTE </div>
-                </a>
-            </button>
-        @endif
-    </div>
-
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="a"></button>
@@ -43,8 +33,15 @@
         </button>
     </div>
 
-
-
+    <div class="d-flex justify-content-center">
+        @if(Auth::check() && Auth::user()->isAdmin)
+            <button class="createButton">
+                <a href="{{ route('createTrainRoute') }}" style="text-decoration:none">
+                    <div class="textCreateButton"> NEW TRAIN ROUTE </div>
+                </a>
+            </button>
+        @endif
+    </div>
 
     <div class="cardPosition">
         @foreach ($trainRoutes as $trainRoute)

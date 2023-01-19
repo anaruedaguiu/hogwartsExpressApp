@@ -76,6 +76,11 @@
 .reserveButtons button a {
     color: #D1C5AC !important;
     text-decoration: none !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.reserveButtons button a:hover {
+    color: #110F1C !important;
 }
 
 .backButton {
@@ -88,6 +93,11 @@
     font-size: 18px;
     text-decoration: none !important;
     padding: 10px 20px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.backButton:hover {
+    color: #110F1C !important;
 }
 
 @media screen and (min-width: 920px) {

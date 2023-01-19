@@ -27,11 +27,14 @@
 
 </head>
 <body class="bodyApp">
+    <audio id="magicSound" loop>
+        <source src="/music/hogwarts.mp3" type="audio/mp3">
+    </audio>
     <div id="app" class="navBarApp">
         <nav class="navbar navbar-expand-md navbar-light navbar-dark shadow-sm">
             <div class="container navBox">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="/imagenes/logoAnden934V01.jpeg" alt="Logo Anden 9 3/4" style="width:150px;"/>
+                    <img src="/imagenes/lightLogoLimited.png" alt="Logo Anden 9 3/4" style="width:150px;"/>
                     {{-- {{ config('app.name', 'Laravel') }} --}}
                 </a>
                 <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -89,6 +92,7 @@
     </div>
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="/js/app.js"></script>
 
 
         <footer class="footerTrainRoute">
