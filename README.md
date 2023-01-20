@@ -80,6 +80,10 @@ On this project we use PHP Laravel to Create the CRUD, the User Management, Data
 * Database name: hogwartsexpress
 * Run migration:
   - ***php artisan migration:fresh --seed*** command
+  
+⚠️ **IMPORTANT** ⚠️
+
+The project is currently on the "dev" branch. After successfully installing the project, run ***git switch dev*** to view it.
 
 ## Tests
 Uncomment the following code lines on **phpunit.xml** is needed before run the test:
